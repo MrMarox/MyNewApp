@@ -1,17 +1,15 @@
-import './App.scss'
-import Footer from './modules/Footer'
-import Banner from './modules/Banner'
+import "./App.scss";
+import Footer from "./modules/Footer";
+import Banner from "./modules/Banner";
 
 function App() {
-  
-
   return (
     <>
-      <Banner/>
-    
-      <Footer/>
+      <Banner />
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
