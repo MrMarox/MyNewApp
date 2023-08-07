@@ -9,6 +9,10 @@ $black: #000;
 //   text-align: center;
 // }
 
+* {
+  transition: all 0.2s linear;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
