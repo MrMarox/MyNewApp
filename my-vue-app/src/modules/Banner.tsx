@@ -1,16 +1,15 @@
-import '../styles/Banner.scss'
+import "../styles/Banner.scss";
 
-export default function Banner(){
-    return (
-        <div className='box'>
-            <div className='left'><h1>Let's work together</h1></div>
-            <div className='right'>
-                <div className='right-up'><a>HI@XYZ.COM</a></div>
-                <div className='right-down'>
-                    
-                </div>
-            </div>
-        </div>
-    )
-    
+export default function Banner() {
+  return (
+    <header>
+      <img src="../image/logo.png" alt="website-logo" />
+      <ul className="menu">
+        <li className="menu-item">Pricing</li>
+        <li className="menu-item">Features</li>
+        <li className="menu-item">Blog</li>
+        <li className="menu-item">Try Free</li>
+      </ul>
+    </header>
+  );
 }
