@@ -7,9 +7,12 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 15vh;
-    position:relative img {
+    position: relative;
+
+    img {
         margin-left: 13vw;
     }
+
     .menu {
         display: flex;
         justify-content: space-around;
@@ -17,6 +20,7 @@ header {
         width: 40vw;
         margin-right: 5vw;
         list-style-type: none;
+
         &-item {
             text-decoration: none;
             font-weight: 400;
@@ -26,6 +30,7 @@ header {
             padding: 0.2%;
             color: grey;
         }
+
         &-item:last-child {
             border: 2px solid $main;
             border-radius: 10px;
@@ -36,6 +41,7 @@ header {
             text-align: center;
             color: $white;
         }
+
         &-item:last-child:hover {
             background-color: #fafafa;
             color: $main;

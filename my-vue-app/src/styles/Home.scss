@@ -6,13 +6,16 @@ h1 {
     color: $black;
     font-size: 250px;
 }
+
 .first_container {
     display: flex;
     justify-content: space-around;
+
     .left {
         width: 40%;
         padding-left: 6%;
     }
+
     .right {
         width: 50%;
     }
