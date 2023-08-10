@@ -15,6 +15,5 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'prettier/prettier': 0,
   },
 }
