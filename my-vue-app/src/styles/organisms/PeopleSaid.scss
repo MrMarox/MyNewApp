@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &_text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 80%;
+
+            h4 {
+                width: 71%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #f1edfb;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 20px;
+
+            @media (width <= 1024px) {
+                width: 60%;
+            }
+
+            &_avatar {
+                width: 30%;
+                padding: 20px;
+
+                img {
+                    width: 100%;
+                    border-radius: 100px;
+                }
+            }
+
+            &_text {
+                width: 80%;
+
+                p {
+                    color: black;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

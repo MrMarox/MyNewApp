@@ -1,3 +1,5 @@
+import "../../styles/atom/Button.scss";
+
 function test() {
     alert("You click me");
 }

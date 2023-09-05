@@ -1,7 +1,9 @@
+import "../../styles/atom/Title.scss";
+
 export default function Title({
     children,
 }: {
     children: JSX.Element | string;
 }) {
-    return <h1 className="title">{children}</h1>;
+    return <h2 className="title">{children}</h2>;
 }
