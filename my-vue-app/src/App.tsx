@@ -7,6 +7,7 @@ import Start from "./components/sections/Start/organisms/Start";
 import Sponsors from "./components/sections/Sponsors/Sponsors";
 import Activity from "./components/sections/Activity/organisms/Activity";
 import PeopleSaid from "./components/sections/PeopleSaid/organisms/PeopleSaid";
+import Newsletter from "./components/sections/Newsletter/organisms/Newsletter";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Security />
             <Activity />
             <PeopleSaid />
+            <Newsletter />
             {/* <Footer /> */}
         </>
     );
