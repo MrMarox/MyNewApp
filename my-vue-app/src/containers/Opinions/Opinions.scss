@@ -1,0 +1,104 @@
+.opinions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        margin-bottom: 20px;
+
+        .title {
+            font-size: 20px;
+            margin: 20px;
+
+            @media (width >=767px) {
+                font-size: 25px;
+            }
+
+            @media (width >= 1024px) {
+                font-size: 40px;
+            }
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: gray;
+            font-weight: 400;
+            line-height: 20px;
+
+            @media (width >=767px) {
+                font-size: 16px;
+            }
+
+            @media (width >= 1024px) {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &_boxes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #f1edfb;
+            border-radius: 25px;
+            display: flex;
+            width: 80%;
+            margin: 20px;
+            justify-content: center;
+
+            @media (width >= 767px) {
+                width: 40%;
+            }
+
+            &_avatar {
+                width: 30%;
+                padding: 20px;
+
+                img {
+                    width: 100%;
+                    border-radius: 100px;
+                }
+            }
+
+            &_text {
+                width: 80%;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .content {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 25px;
+
+                    @media (width >=767px) {
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 400;
+                    }
+
+                    @media (width >= 1024px) {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
+
+                .id {
+                    color: black;
+                    font-size: 12px;
+                    font-weight: 800;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}

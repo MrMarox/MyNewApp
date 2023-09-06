@@ -5,6 +5,7 @@ import Home from "./containers/Home/Home";
 import Sponsors from "./containers/Sponsors/Sponsors";
 import Security from "./containers/Security/Security";
 import Activity from "./containers/Activity/Activity";
+import Opinions from "./containers/Opinions/Opinions";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
             <Sponsors />
             <Security />
             <Activity />
-            {/* <PeopleSaid /> */}
+            <Opinions />
             {/* <Newsletter />  */}
             {/* <Footer /> */}
         </>
