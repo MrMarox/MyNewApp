@@ -1,5 +1,6 @@
 import "./Home.scss";
 import "../../assets/styles/colors.scss";
+
 const data = {
     title: "Smart Transaction, Secured Privacy.",
     subtitle:
@@ -10,17 +11,19 @@ const data = {
 
 export default function Home() {
     return (
-        <>
-            <div className="home">
-                <div className="home_left">
-                    <h1 className="title">{data.title}</h1>
-                    <h4 className="subtitle">{data.subtitle}</h4>
-                    <button className="button">{data.buttonText}</button>
-                </div>
-                <div className="home_right">
-                    <img src={data.src} alt="website-logo1111" />
-                </div>
+        <div className="home">
+            <div className="home__left">
+                <h1 className="home__title">{data.title}</h1>
+                <h4 className="home__subtitle">{data.subtitle}</h4>
+                <button className="home__button">{data.buttonText}</button>
             </div>
-        </>
+            <div className="home__right">
+                <img
+                    className="home__image"
+                    src={data.src}
+                    alt="website-logo1111"
+                />
+            </div>
+        </div>
     );
 }
