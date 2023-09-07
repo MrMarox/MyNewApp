@@ -4,17 +4,19 @@ export default function Newsletter() {
     return (
         <>
             <div className="newsletter">
-                <div className="newsletter_title">
+                <div className="newsletter__title">
                     <h2>{title}</h2>
                 </div>
-                <div className="newsletter_input">
-                    <label>
+                <div>
+                    <label className="newsletter__input">
                         <input
-                            className="text"
+                            className="newsletter__text"
                             type="text"
                             placeholder="Enter your e-mail here"
                         ></input>
-                        <button className="input">Subscribe</button>
+                        <button className="newsletter__button-input">
+                            Subscribe
+                        </button>
                     </label>
                 </div>
             </div>

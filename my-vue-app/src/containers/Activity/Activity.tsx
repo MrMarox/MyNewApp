@@ -12,13 +12,19 @@ export default function Activity() {
     return (
         <>
             <div className="activity">
-                <div className="activity_left">
-                    <h1 className="title">{data.title}</h1>
-                    <h4 className="subtitle">{data.subtitle}</h4>
-                    <button className="button">{data.buttonText}</button>
+                <div className="activity__left">
+                    <h1 className="activity__title">{data.title}</h1>
+                    <h4 className="activity__subtitle">{data.subtitle}</h4>
+                    <button className="activity__button">
+                        {data.buttonText}
+                    </button>
                 </div>
-                <div className="activity_right">
-                    <img src={data.src} alt="website-logo1111" />
+                <div className="activity__right">
+                    <img
+                        className="activity__image"
+                        src={data.src}
+                        alt="website-logo1111"
+                    />
                 </div>
             </div>
         </>

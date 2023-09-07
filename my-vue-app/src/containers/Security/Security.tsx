@@ -12,13 +12,19 @@ export default function Security() {
     return (
         <>
             <div className="security">
-                <div className="security_left">
-                    <img src={data.src} alt="website-logo1111" />
+                <div className="security__left">
+                    <img
+                        className="security__image"
+                        src={data.src}
+                        alt="website-logo1111"
+                    />
                 </div>
-                <div className="security_right">
-                    <h1 className="title">{data.title}</h1>
-                    <h4 className="subtitle">{data.subtitle}</h4>
-                    <button className="button">{data.buttonText}</button>
+                <div className="security__right">
+                    <h1 className="security__title">{data.title}</h1>
+                    <h4 className="security__subtitle">{data.subtitle}</h4>
+                    <button className="security__button">
+                        {data.buttonText}
+                    </button>
                 </div>
             </div>
         </>

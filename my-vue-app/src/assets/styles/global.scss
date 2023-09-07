@@ -1,21 +1,19 @@
 #root {
     //kolory
-    color: blue;
     background-color: #fafafa;
 
     //kursor
     cursor: default;
 
     //font
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: "Roboto", sans-serif;
+
     // linki
     a {
         outline: 1px solid red;
-    
+
         &:hover {
             text-decoration: underline;
         }
     }
 }
-

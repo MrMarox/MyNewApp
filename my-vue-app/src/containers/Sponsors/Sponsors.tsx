@@ -12,15 +12,35 @@ export default function Sponsors() {
     return (
         <>
             <div className="sponsors">
-                <img src={data.srcI} alt="website-logo1111" />
+                <img
+                    className="sponsors__image"
+                    src={data.srcI}
+                    alt="website-logo1111"
+                />
 
-                <img src={data.srcII} alt="website-logo1111" />
+                <img
+                    className="sponsors__image"
+                    src={data.srcII}
+                    alt="website-logo1111"
+                />
 
-                <img src={data.srcIII} alt="website-logo1111" />
+                <img
+                    className="sponsors__image"
+                    src={data.srcIII}
+                    alt="website-logo1111"
+                />
 
-                <img src={data.srcIV} alt="website-logo1111" />
+                <img
+                    className="sponsors__image"
+                    src={data.srcIV}
+                    alt="website-logo1111"
+                />
 
-                <img src={data.srcV} alt="website-logo1111" />
+                <img
+                    className="sponsors__image"
+                    src={data.srcV}
+                    alt="website-logo1111"
+                />
             </div>
         </>
     );

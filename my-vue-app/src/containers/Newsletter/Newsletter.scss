@@ -10,7 +10,7 @@
     padding: 40px;
     border-radius: 25px;
 
-    &_title {
+    &__title {
         margin: 25px;
         font-size: 10px;
 
@@ -23,11 +23,11 @@
         }
     }
 
-    label {
+    &__input {
         position: relative;
     }
 
-    .text {
+    &__text {
         border: none;
         width: 50%;
         height: 50px;
@@ -36,7 +36,7 @@
         color: black;
     }
 
-    .input {
+    &__button-input {
         position: absolute;
         right: 0;
         color: white;

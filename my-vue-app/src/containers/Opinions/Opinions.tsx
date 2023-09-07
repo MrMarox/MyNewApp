@@ -13,36 +13,48 @@ export default function Opinions() {
     return (
         <>
             <div className="opinions">
-                <div className="opinions_title">
-                    <h2 className="title">{data.title}</h2>
-                    <h4 className="subtitle">{data.subtitle}</h4>
+                <div className="opinions__textbox">
+                    <h2 className="opinions__title">{data.title}</h2>
+                    <h4 className="opinions__subtitle">{data.subtitle}</h4>
                 </div>
-                <div className="opinions_boxes">
+                <div className="opinions__cardbox">
                     <div className="card">
-                        <div className="card_avatar">
-                            <img src={data.src} alt="avatar" />
+                        <div className="card__avatar">
+                            <img
+                                className="card__image"
+                                src={data.src}
+                                alt="avatar"
+                            />
                         </div>
-                        <div className="card_text">
-                            <h4 className="content">{data.contents}</h4>
-                            <p className="id">{data.ID}</p>
+                        <div className="card__text">
+                            <h4 className="card__content">{data.contents}</h4>
+                            <p className="card__id">{data.ID}</p>
                         </div>
                     </div>
                     <div className="card">
-                        <div className="card_avatar">
-                            <img src={data.src} alt="avatar" />
+                        <div className="card__avatar">
+                            <img
+                                className="card__image"
+                                src={data.src}
+                                alt="avatar"
+                            />
                         </div>
-                        <div className="card_text">
-                            <h4 className="content">{data.contents}</h4>
-                            <p className="id">{data.ID}</p>
+                        <div className="card__text">
+                            <h4 className="card__content">{data.contents}</h4>
+                            <p className="card__id">{data.ID}</p>
                         </div>
                     </div>
                     <div className="card">
-                        <div className="card_avatar">
-                            <img src={data.src} alt="avatar" />
+                        <div className="card__avatar">
+                            <img
+                                className="card__image"
+                                src={data.src}
+                                alt="avatar"
+                            />
                         </div>
-                        <div className="card_text">
-                            <h4 className="content">{data.contents}</h4>
-                            <p className="id">{data.ID}</p>
+                        <div className="card__text">
+                            <h4 className="card__content">{data.contents}</h4>
+                            <p className="card__id">{data.ID}</p>
                         </div>
                     </div>
                 </div>

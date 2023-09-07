@@ -1,4 +1,5 @@
 import "./assets/styles/global.scss";
+import "./assets/styles/reset.scss";
 // import Footer from "./modules/Footer";
 import Banner from "./modules/Banner";
 import Home from "./containers/Home/Home";
