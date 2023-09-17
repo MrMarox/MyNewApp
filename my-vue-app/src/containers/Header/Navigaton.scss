@@ -1,0 +1,81 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/variables";
+
+.navigation {
+    &--desktop {
+        display: none;
+
+        @include medium-up {
+            display: block;
+
+            & ul {
+                display: flex;
+            }
+
+            & a {
+                padding: 10px;
+                margin: 0 30px;
+                color: $gray-dark;
+                line-height: $line-height-base;
+                font-weight: $font-weight-semibold;
+                transition: color 0.1s linear;
+
+                &:hover {
+                    color: $violet-primary;
+                }
+
+                &.active {
+                    color: $violet-primary;
+                }
+            }
+        }
+    }
+
+    &--mobile {
+        background-color: $white;
+        position: fixed;
+        inset: 0 0 0 20%;
+        z-index: 20;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        padding: 19px 24px;
+        border-bottom: 1px solid $violet-primary;
+
+        &-heading {
+            font-size: 40px;
+            color: $violet-primary;
+            font-weight: bold;
+        }
+    }
+
+    &__list {
+        padding: 46px 26px 18px;
+        border-bottom: 1px solid $violet-primary;
+
+        & a {
+            color: $gray-dark;
+            display: block;
+            margin-bottom: 28px;
+            font-weight: $font-weight-semibold;
+
+            &:hover {
+                color: $violet-primary;
+            }
+
+            &.active {
+                color: $violet-primary;
+            }
+        }
+    }
+
+    &__cta {
+        padding: 19px 24px;
+    }
+}

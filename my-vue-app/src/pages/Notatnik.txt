@@ -12,4 +12,25 @@
 
 
 
+@mixin primary {
+    background-color: $violet-light;
+}
 
+ &__button {
+        @include primary;
+    }
+
+
+Problem mixin na przykładzie przycisku w header 
+btn--small przenoszenie modyfikatorów w mixin
+
+ciekawe działanie classy "header__container flex" 
+
+Nawigacja  ------ czy stylujemy & ul czy dla ul klasa x i ją stylujemy 
+& ul{
+                display flex;
+            }
+
+
+tworzenie sekcji głównej 
+18:50 zdjęcie w połowie strony czy zwracamy na takie rzeczy uwage czy nie 

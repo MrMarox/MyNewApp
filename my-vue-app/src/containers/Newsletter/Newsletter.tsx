@@ -14,7 +14,10 @@ export default function Newsletter() {
                             type="text"
                             placeholder="Enter your e-mail here"
                         ></input>
-                        <button className="btn">Subscribe</button>
+
+                        <button className="newsletter__button">
+                            Subscribe
+                        </button>
                     </label>
                 </div>
             </div>

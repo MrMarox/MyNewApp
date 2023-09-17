@@ -1,4 +1,7 @@
-.container{
+@import "./variables";
+@import "./mixins";
+
+@mixin container {
     max-width: 1054px;
     margin: 0 auto;
     padding: 0 $grid-base * 1.5;
@@ -9,24 +12,24 @@
     }
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:20px; 
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100%;
 
-    &--3{
+    &--3 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    &--4{
+    &--4 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,49 +41,49 @@
     padding: $grid-base * 1.5;
     display: inline-block;
 
-    &--md25{
+    &--md25 {
         @include medium-up {
             flex: 0 0 25%;
             max-width: 25%;
         }
     }
 
-    &--md33{
+    &--md33 {
         @include medium-up {
             flex: 0 0 33.3%;
             max-width: 33.3%;
         }
     }
 
-    &--md50{
+    &--md50 {
         @include medium-up {
             flex: 0 0 50%;
             max-width: 50%;
         }
     }
 
-    &--lg25{
+    &--lg25 {
         @include large-up {
             flex: 0 0 25%;
             max-width: 25%;
         }
     }
 
-    &--lg33{
+    &--lg33 {
         @include large-up {
             flex: 0 0 33.3%;
             max-width: 33.3%;
         }
     }
 
-    &--lg50{
+    &--lg50 {
         @include large-up {
             flex: 0 0 50%;
             max-width: 50%;
         }
     }
 
-    &--hidden-sm{
+    &--hidden-sm {
         display: none;
 
         @include small-up {

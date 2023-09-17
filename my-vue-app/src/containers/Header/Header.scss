@@ -1,0 +1,33 @@
+@use "../../assets/styles/button" as b;
+@use "../../assets/styles/layout" as l;
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/utils";
+
+.btn {
+    @include b.btn;
+}
+
+.header {
+    padding-top: 25px;
+    position: relative;
+
+    &__container {
+        @include l.container;
+    }
+
+    @include medium-up {
+        padding-top: 60px;
+    }
+
+    & .flex {
+        justify-content: space-between;
+    }
+
+    &__btn {
+        display: none;
+
+        @include medium-up {
+            display: inline-block;
+        }
+    }
+}
