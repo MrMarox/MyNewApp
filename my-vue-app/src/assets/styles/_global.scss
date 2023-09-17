@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import "./colors";
+@import "./variables";
+
+#root {
+    //kolory
+    background-color: #fafafa;
+
+    //kursor
+    cursor: default;
+
+    //font
+    color: $grey-dark;
+    font-size: $font-size-base;
+    font-family: 'Raleway', sans-serif;
+
+    // linki
+    a {
+        outline: 1px solid red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

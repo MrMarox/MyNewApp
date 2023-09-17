@@ -1,5 +1,5 @@
 import "./Activity.scss";
-import "../../assets/styles/colors.scss";
+
 const data = {
     title: "Easy to Track All Your Banking Activity.",
     subtitle:

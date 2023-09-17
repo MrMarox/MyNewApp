@@ -1,0 +1,15 @@
+@import '...'
+
+    color: $primary
+
+@use '...' as c
+
+    color : c.$primary
+
+@use '...' as *
+
+    color: $primary
+
+
+
+

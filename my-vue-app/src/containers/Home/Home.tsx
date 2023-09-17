@@ -1,5 +1,4 @@
 import "./Home.scss";
-import "../../assets/styles/colors.scss";
 
 const data = {
     title: "Smart Transaction, Secured Privacy.",

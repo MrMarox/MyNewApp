@@ -1,5 +1,4 @@
 import "./Sponsors.scss";
-import "../../assets/styles/colors.scss";
 
 const data = {
     srcI: "/sponsor1.png",

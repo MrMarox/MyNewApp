@@ -1,5 +1,4 @@
 import "./Security.scss";
-import "../../assets/styles/colors.scss";
 const data = {
     title: "100% Totally Secured Virtual Credit Card.",
     subtitle:
