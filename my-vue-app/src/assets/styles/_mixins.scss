@@ -18,3 +18,10 @@
         @content;
     }
 }
+
+@mixin paragraph {
+    color: $gray-secondary;
+    margin-top: 34px;
+    font-size: $font-size-4;
+    line-height: $line-height-md;
+}

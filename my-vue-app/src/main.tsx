@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./pages/App.tsx";
-import Site from "./pages/Site1";
+import Site from "./pages/Site";
+// import Site from "./pages/Site1";
 import "./assets/styles/_global.scss";
 import "./assets/styles/_reset.scss";
 

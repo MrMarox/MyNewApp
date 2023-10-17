@@ -1,0 +1,76 @@
+@use "../../assets/styles/layout" as l;
+@use "../../assets/styles/button" as b;
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/typography";
+@import "../../assets/styles/variables";
+@import "../../assets/styles/colors";
+
+.section {
+    padding: 65px 0 0;
+
+    @include medium-up {
+        padding: 150px 0 0;
+    }
+}
+
+.ar {
+    &__container {
+        @include l.container;
+    }
+
+    & .grid {
+        grid-template-columns: 1fr;
+
+        @include medium-up {
+            position: relative;
+            grid-template-columns: 50% 50%;
+            background: $gradient;
+            border-radius: 50px;
+            padding: 134px 55px;
+        }
+    }
+
+    & h2 {
+        width: 80%;
+
+        @include medium-up {
+            width: 80%;
+        }
+    }
+
+    & p {
+        @include paragraph;
+    }
+
+    &__text {
+        text-align: center;
+
+        @include medium-up {
+            text-align: left;
+        }
+    }
+
+    &__img {
+        &--mobile {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include medium-up {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+
+            @include medium-up {
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: -100px;
+                width: 45%;
+            }
+        }
+    }
+}

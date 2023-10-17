@@ -1,0 +1,79 @@
+@use "../../assets/styles/layout" as l;
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/typography";
+@import "../../assets/styles/variables";
+@import "../../assets/styles/colors";
+
+.section {
+    padding: 65px 0 0;
+
+    @include medium-up {
+        padding: 150px 0 0;
+    }
+}
+
+.offers {
+    &__container {
+        @include l.container;
+    }
+
+    &__info {
+        font-weight: $font-weight-semibold;
+        font-size: 34px;
+        line-height: 36px;
+        margin-bottom: 70px;
+
+        @include medium-up {
+            font-size: $font-size-2;
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        @include medium-up {
+            text-align: left;
+            margin-left: 60px;
+        }
+
+        & p {
+            color: $gray-secondary;
+            margin-top: 34px;
+            font-size: $font-size-4;
+            line-height: $line-height-md;
+        }
+    }
+
+    &__img {
+        &--desktop {
+            display: none;
+
+            @include medium-up {
+                display: inline-block;
+            }
+        }
+    }
+
+    /* stylelint-disable-next-line no-duplicate-selectors */
+    &__img {
+        &--mobile {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include medium-up {
+                display: none;
+            }
+        }
+    }
+
+    & .grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+
+        @include medium-up {
+            grid-template-columns: 45% 55%;
+            flex-direction: row;
+        }
+    }
+}

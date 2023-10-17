@@ -38,9 +38,11 @@
             margin-bottom: 44px;
             font-size: $font-size-4;
             line-height: $line-height-md;
+            width: 100%;
 
             @include medium-up {
                 margin-bottom: 57px;
+                width: 80%;
             }
         }
     }

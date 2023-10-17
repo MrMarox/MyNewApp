@@ -34,3 +34,7 @@ Nawigacja  ------ czy stylujemy & ul czy dla ul klasa x i ją stylujemy
 
 tworzenie sekcji głównej 
 18:50 zdjęcie w połowie strony czy zwracamy na takie rzeczy uwage czy nie 
+
+
+offers <br> nie działa 
+Animacje 

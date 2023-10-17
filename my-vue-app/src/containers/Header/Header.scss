@@ -24,10 +24,12 @@
     }
 
     &__btn {
-        display: none;
+        &.btn {
+            display: none;
 
-        @include medium-up {
-            display: inline-block;
+            @include medium-up {
+                display: inline-block;
+            }
         }
     }
 }

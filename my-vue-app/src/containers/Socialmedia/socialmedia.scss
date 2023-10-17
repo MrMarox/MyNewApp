@@ -1,0 +1,53 @@
+@use "../../assets/styles/layout" as l;
+@use "../../assets/styles/button" as b;
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/typography";
+@import "../../assets/styles/variables";
+@import "../../assets/styles/colors";
+
+.section {
+    padding: 65px 0 0;
+
+    @include medium-up {
+        padding: 150px 0 0;
+    }
+}
+
+.socialmedia {
+    @include l.container;
+
+    &__img {
+        justify-self: center;
+        width: 95%;
+    }
+
+    &__text {
+        color: $black;
+        font-weight: $font-weight-bold;
+        font-size: 26px;
+        line-height: 36px;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+
+        @include medium-up {
+            font-size: $font-size-3;
+            line-height: 57px;
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    & .grid {
+        padding-bottom: 50px;
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid $violet-light;
+        margin: 0 15px;
+
+        @include medium-up {
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
